@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tektur', sans-serif;
+}
+
+body {
+  min-height: 600vh;
+  overflow-x: hidden;
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.step--content {
+  z-index: 200;
+  position: fixed;
+  inset: 0;
+  visibility: hidden;
+}
+
+/* Step 1 */
+.step1 {
+  position: fixed;
+  inset: 0;
+  background-color: #87ceeb;
+  opacity: 0;
+}
+
+.step1--pink-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffc0cb;
+  clip-path: polygon(0% 33.3%, 100% 0%, 100% 100%, 0% 66.6%);
+  z-index: 20;
+}
+
+.step1--green-ground {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background: #9acd32;
+  bottom: 0;
+  z-index: 3;
+}
+
+.step1-couple-image {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  top: calc(50% - 15vw);
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 768px) {
+    width: 80vw;
+    height: 80vw;
+    left: 10vw;
+    bottom: 0;
+    top: auto;
+  }
+}
+
+.step1--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10vh 0;
+  .textbox-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10vw;
+    @media (max-width: 768px) {
+      padding: 5vw;
+    }
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: right;
+  }
+}
+
+/* Step 2 */
+.step2 {
+  position: fixed;
+  inset: 0;
+  background-color: #ffe055;
+  opacity: 0;
+}
+
+.step2--sky {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #92daff;
+  clip-path: polygon(0% 40%, 66.6% 100%, 0% 100%);
+  bottom: 0;
+  z-index: 3;
+}
+
+.step2--content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Step 3 */
+.step3 {
+  position: fixed;
+  inset: 0;
+  background-color: #ffc155;
+  opacity: 0;
+}
+
+.step3--sky-left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #92daff;
+  clip-path: polygon(0% 0%, 25% 0%, 0% 60%);
+  z-index: 3;
+}
+
+.step3--sky-right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #92daff;
+  clip-path: polygon(75% 0%, 100% 0%, 100% 60%);
+  z-index: 3;
+}
+
+/* Step 4 */
+.step4 {
+  position: fixed;
+  inset: 0;
+  background-color: #ff9e1f;
+  opacity: 0;
+}
+
+/* Step 5 */
+.step5 {
+  position: fixed;
+  inset: 0;
+  background-color: #ff5e1f;
+  opacity: 0;
+}
+
+.step5--ground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b7b12a;
+  clip-path: polygon(10% 100%, 100% 50%, 100% 100%);
+  bottom: 0;
+  z-index: 2;
+}
+
+/* Step 6 */
+.step6 {
+  position: fixed;
+  inset: 0;
+  background-color: #f9bbcb;
+  opacity: 0;
+}
+
+.step6--sky {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #a292ff;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 30%);
+  z-index: 1;
+}
+
+.step6--ground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b7b12a;
+  clip-path: polygon(0% 100%, 100% 70%, 100% 100%);
+  bottom: 0;
+  z-index: 2;
+}
+
+/* Sun element */
+.sun {
+  position: fixed;
+  background: yellow;
+  border-radius: 50%;
+  z-index: 100;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 100px rgba(255, 229, 92, 0.8),
+    0 0 200px rgba(255, 229, 92, 0.4);
+  mix-blend-mode: screen;
+  overflow: hidden;
+}
+
+.step2--content .textbox-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .textbox {
+    margin: 2vh;
+  }
+  .value {
+    font-size: 5rem;
+  }
+  @media (max-width: 768px) {
+    .value {
+      font-size: 4rem;
+    }
+  }
+}
+
+.step3--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: auto; */
+  .textbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 10vh;
+    text-align: center;
+    p {
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      margin: 5vh;
+    }
+    .title {
+      font-size: 5rem;
+      @media (max-width: 768px) {
+        font-size: 3rem;
+      }
+    }
+  }
+  .agenda {
+    max-width: 40%;
+    @media (max-width: 768px) {
+      max-width: 80%;
+    }
+  }
+}
+
+.step4--content,
+.step5--content {
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10vh 0;
+  .form-container,
+  .playlist-container {
+    margin-top: 5vh;
+    height: 100%;
+    top: 25%;
+    background-color: white;
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .playlist-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: 768px) {
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    img {
+      width: 100%;
+      height: auto !important;
+    }
+    .form-container,
+    .playlist-container {
+      margin-top: 20vh;
+    }
+  }
+}
+
+.step6--content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 10vh 0;
+  .textbox-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10vw;
+    text-align: left;
+    @media (max-width: 768px) {
+      margin-bottom: 20vh;
+    }
+  }
+  .image-container {
+    position: absolute;
+    width: 20vw;
+    right: 10vw;
+    bottom: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: 768px) {
+    .image-container {
+      width: 80vw;
+    }
+  }
+  .name-vadzim {
+    position: absolute;
+    bottom: 5vh;
+    left: -2vw;
+  }
+  .name-dasha {
+    position: absolute;
+    bottom: 10vh;
+    right: -2vw;
+  }
+}
+
+/* Video section styling */
+.video-section {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  visibility: visible;
+}

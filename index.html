@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="be">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Vibe Transition V4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="base-styles.css" />
+    <link rel="stylesheet" href="page-styles.css" />
+    <script src="//embed.typeform.com/next/embed.js"></script>
+    <script src="translations.js"></script>
+  </head>
+  <body>
+    <div class="lang-switcher">
+      <button
+        class="lang-btn be active"
+        data-lang="be"
+        aria-label="Беларуская мова"
+      ></button>
+      <button class="lang-btn en" data-lang="en" aria-label="English"></button>
+    </div>
+
+    <a href="https://github.com/vadzimk/wedding" class="github-link" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+      <svg viewBox="0 0 16 16" class="github-icon">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+      <div class="github-stars">
+        <svg viewBox="0 0 16 16">
+          <path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z" fill-rule="evenodd"/>
+        </svg>
+        2025
+      </div>
+    </a>
+
+    <div class="background">
+      <div class="sun"></div>
+      <div class="step1">
+        <div class="step1--pink-area"></div>
+        <div class="step1--green-ground"></div>
+      </div>
+
+      <div class="step1--content step--content">
+        <div class="step1-couple-image">
+          <img src="./images/couple-intro.png" alt="couple" />
+        </div>
+        <div class="textbox-container">
+          <div class="title-big" data-translate="wedding">вя-сел-ле!</div>
+          <div class="smaller-text" data-translate="weddingNote">*wedding</div>
+        </div>
+      </div>
+
+      <div class="step2">
+        <div class="step2--sky"></div>
+      </div>
+
+      <div class="step2--content step--content">
+        <div class="textbox-container">
+          <div class="textbox location">
+            <div class="caption smaller-text" data-translate="location">
+              Warsaw
+            </div>
+            <div class="value">19.07.2025</div>
+          </div>
+          <div class="textbox counter">
+            <div class="caption smaller-text" data-translate="daysLeft">
+              засталося
+            </div>
+            <div class="value" id="days-counter">
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  const weddingDate = new Date('2025-07-19');
+                  const today = new Date();
+
+                  // Calculate the difference in milliseconds
+                  const diffTime = weddingDate - today;
+
+                  // Convert to days and round down
+                  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+                  // Display the result
+                  document.getElementById('days-counter').textContent =
+                    diffDays + ' дзён';
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step3">
+        <div class="step3--sky-left"></div>
+        <div class="step3--sky-right"></div>
+      </div>
+
+      <div class="step3--content step--content">
+        <div class="textbox-container">
+          <div class="title" data-translate="whatToExpect">
+            на што разлічваць?
+          </div>
+          <div class="small-text" data-translate="detailedPlan">
+            *Дэталёвы план будзе бліжэй да сустрэчы
+          </div>
+        </div>
+
+        <div class="textbox-container agenda">
+          <p data-translate="food">Ежа і напоі</p>
+          <p data-translate="rest">Адпачынак</p>
+          <p data-translate="activities">
+            Розныя актыўнасці ў тым ліку спартыўныя (але на ваш густ, захочаце -
+            можаце ўвесь час прабавіць у басейне)
+          </p>
+          <p data-translate="people">Людзі, размовы</p>
+          <p data-translate="ceremony">Цырымонія</p>
+          <p data-translate="dance">Танцы</p>
+        </div>
+      </div>
+
+      <div class="step4"></div>
+
+      <div class="step4--content step--content">
+        <div class="title" data-translate="form">Апытанка</div>
+        <div class="form-container">
+          <div data-tf-live="01JSVZ9VBTRAT47S4S2F1CBBNM"></div>
+        </div>
+      </div>
+
+      <div class="step5">
+        <div class="step5--ground"></div>
+      </div>
+
+      <div class="step5--content step--content">
+        <div class="title" data-translate="playlist">Playlist</div>
+        <div class="playlist-container">
+          <a
+            class="playlist-link"
+            href="https://music.youtube.com/playlist?list=PLkOWUKyvEGvu-hAl3qLFAYtW7oehu4pkd"
+            target="_blank"
+          >
+          </a>
+          <img src="./images/playlist.png" alt="playlist" />
+        </div>
+      </div>
+
+      <div class="step6">
+        <div class="step6--sky"></div>
+        <div class="step6--ground"></div>
+      </div>
+
+      <div class="step6--content step--content">
+        <div class="textbox-container">
+          <div class="title-big" data-translate="waiting">ча-ка-ем!</div>
+          <div class="smaller-text" data-translate="waitingNote">
+            *вельмі моцна
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="textbox name-vadzim">Vadzim</div>
+          <div class="textbox name-dasha">Dasha</div>
+          <img src="./images/couple-outro.png" alt="couple" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Language switcher functionality
+      let currentLang = 'be';
+
+      function updateContent(lang) {
+        document.documentElement.lang = lang;
+        document.querySelectorAll('[data-translate]').forEach((element) => {
+          const key = element.getAttribute('data-translate');
+          element.textContent = translations[lang][key];
+        });
+
+        // Update days counter text
+        updateDaysCounter();
+      }
+
+      function updateDaysCounter() {
+        const weddingDate = new Date('2025-07-19');
+        const today = new Date();
+        const diffTime = weddingDate - today;
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        const daysText = translations[currentLang].days;
+        document.getElementById(
+          'days-counter'
+        ).textContent = `${diffDays} ${daysText}`;
+      }
+
+      // Initialize language switcher
+      document.querySelectorAll('.lang-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const lang = btn.getAttribute('data-lang');
+          if (lang === currentLang) return;
+
+          // Update active state
+          document.querySelector('.lang-btn.active').classList.remove('active');
+          btn.classList.add('active');
+
+          // Update language and content
+          currentLang = lang;
+          updateContent(lang);
+        });
+      });
+
+      // Initialize content
+      document.addEventListener('DOMContentLoaded', () => {
+        updateContent(currentLang);
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const steps = Array.from({ length: 6 }, (_, i) =>
+          document.querySelector(`.step${i + 1}`)
+        );
+        const stepsContent = Array.from({ length: 6 }, (_, i) =>
+          document.querySelector(`.step${i + 1}--content`)
+        );
+        const sun = document.querySelector('.sun');
+
+        const isMobile = window.innerWidth < 768;
+
+        // Sun positions for each step
+        const sunPositions = [
+          {
+            width: '40vh',
+            height: '40vh',
+            top: '30vh',
+            left: isMobile ? '-20vw' : '-10%',
+            right: 'null',
+            transform: 'none',
+          }, // Step 1: Middle left
+          {
+            width: '40vh',
+            height: '40vh',
+            top: '0vh',
+            left: '-10%',
+            right: 'auto',
+            transform: 'none',
+          }, // Step 2: Top left
+          {
+            width: isMobile ? '40vw' : '50vw',
+            height: isMobile ? '40vw' : '50vw',
+            top: isMobile ? '0vh' : '-40vh',
+            left: isMobile ? '20vw' : '25vw',
+            right: isMobile ? '10vw' : '25vw',
+            transform: 'none',
+          }, // Step 3: Top center
+          {
+            width: '95vw',
+            height: '95vw',
+            top: isMobile ? '0vh' : '-45vh',
+            left: '2.5vw',
+            right: '2.5vw',
+            transform: 'none',
+          }, // Step 4: Center huge
+          {
+            width: '40vw',
+            height: '40vw',
+            top: '-10vh',
+            left: 'auto',
+            right: '-10vw',
+            transform: 'none',
+          }, // Step 5: Top right small
+          {
+            width: isMobile ? '40vh' : '20vw',
+            height: isMobile ? '40vh' : '20vw',
+            top: '30vh',
+            left: 'auto',
+            right: '-10vw',
+            transform: 'none',
+          }, // Step 6: Middle right
+        ];
+
+        function updateSteps() {
+          const scrollPercent =
+            window.scrollY /
+            (document.documentElement.scrollHeight - window.innerHeight);
+
+          // Calculate which steps we're between (0-5)
+          const rawStep = scrollPercent * 5;
+          const currentStep = Math.floor(rawStep);
+          const nextStep = Math.min(currentStep + 1, 5);
+          const progress = rawStep - currentStep;
+
+          // Show current and next step backgrounds
+          steps.forEach((step, i) => {
+            step.style.opacity = i === currentStep ? '1' : '0';
+          });
+
+          stepsContent.forEach((stepContent, i) => {
+            if (!stepContent) return;
+            stepContent.style.visibility =
+              i === currentStep ? 'visible' : 'hidden';
+          });
+
+          // Calculate sun position based on scroll position
+          calculateSunPosition(currentStep, nextStep, progress);
+        }
+
+        function calculateSunPosition(currentStep, nextStep, progress) {
+          // Get the positions for current and next steps
+          const currentPos = sunPositions[currentStep];
+          const nextPos = sunPositions[nextStep];
+
+          // Calculate interpolated values for each property
+          const interpolatedPos = {};
+
+          // Handle width and height
+          ['width', 'height'].forEach((prop) => {
+            const current = parseFloat(currentPos[prop]) || 0;
+            const next = parseFloat(nextPos[prop]) || 0;
+            // Extract units from both current and next positions as they might differ
+            const currentUnit = currentPos[prop].replace(/[0-9.-]/g, '');
+            const nextUnit = nextPos[prop].replace(/[0-9.-]/g, '');
+            // Use current unit for interpolation, but we'll need to handle unit conversion in a more complex case
+            const unit = currentUnit;
+            interpolatedPos[prop] = `${
+              current + (next - current) * progress
+            }${unit}`;
+          });
+
+          // Handle top position
+          const currentTop =
+            parseFloat(currentPos.top.replace(/[^0-9.-]/g, '')) || 0;
+          const nextTop = parseFloat(nextPos.top.replace(/[^0-9.-]/g, '')) || 0;
+          const topUnit = currentPos.top.includes('calc')
+            ? 'calc'
+            : currentPos.top.replace(/[0-9.-]/g, '');
+
+          if (topUnit === 'calc') {
+            // Handle calc expressions
+            if (currentPos.top.includes('50%')) {
+              const currentOffset =
+                parseFloat(currentPos.top.match(/-?\d+vh/)?.[0]) || 0;
+              const nextOffset =
+                parseFloat(nextPos.top.match(/-?\d+vh/)?.[0]) || 0;
+              interpolatedPos.top = `calc(50% - ${
+                currentOffset + (nextOffset - currentOffset) * progress
+              }vh)`;
+            } else {
+              interpolatedPos.top =
+                progress < 0.5 ? currentPos.top : nextPos.top;
+            }
+          } else {
+            interpolatedPos.top = `${
+              currentTop + (nextTop - currentTop) * progress
+            }${topUnit}`;
+          }
+
+          // Handle left and right positioning
+          if (currentPos.left !== 'auto' && nextPos.left !== 'auto') {
+            const currentLeft = parseFloat(currentPos.left) || 0;
+            const nextLeft = parseFloat(nextPos.left) || 0;
+            const leftUnit = currentPos.left.replace(/[0-9.-]/g, '');
+            interpolatedPos.left = `${
+              currentLeft + (nextLeft - currentLeft) * progress
+            }${leftUnit}`;
+            interpolatedPos.right = 'auto';
+          } else if (currentPos.right !== 'auto' && nextPos.right !== 'auto') {
+            const currentRight = parseFloat(currentPos.right) || 0;
+            const nextRight = parseFloat(nextPos.right) || 0;
+            const rightUnit = currentPos.right.replace(/[0-9.-]/g, '');
+            interpolatedPos.right = `${
+              currentRight + (nextRight - currentRight) * progress
+            }${rightUnit}`;
+            interpolatedPos.left = 'auto';
+          } else {
+            // Handle transition between left and right positioning
+            if (currentPos.left !== 'auto') {
+              const currentLeft = parseFloat(currentPos.left) || 0;
+              const leftUnit = currentPos.left.replace(/[0-9.-]/g, '');
+              interpolatedPos.left = `${
+                currentLeft * (1 - progress)
+              }${leftUnit}`;
+            } else {
+              interpolatedPos.left = 'auto';
+            }
+
+            if (nextPos.left !== 'auto') {
+              const nextLeft = parseFloat(nextPos.left) || 0;
+              const leftUnit = nextPos.left.replace(/[0-9.-]/g, '');
+              interpolatedPos.left = `${nextLeft * progress}${leftUnit}`;
+            }
+
+            if (currentPos.right !== 'auto') {
+              const currentRight = parseFloat(currentPos.right) || 0;
+              const rightUnit = currentPos.right.replace(/[0-9.-]/g, '');
+              interpolatedPos.right = `${
+                currentRight * (1 - progress)
+              }${rightUnit}`;
+            } else {
+              interpolatedPos.right = 'auto';
+            }
+
+            if (nextPos.right !== 'auto') {
+              const nextRight = parseFloat(nextPos.right) || 0;
+              const rightUnit = nextPos.right.replace(/[0-9.-]/g, '');
+              interpolatedPos.right = `${nextRight * progress}${rightUnit}`;
+            }
+          }
+
+          // Handle transform
+          if (progress < 0.5) {
+            interpolatedPos.transform = currentPos.transform;
+          } else {
+            interpolatedPos.transform = nextPos.transform;
+          }
+
+          // Apply the interpolated position to the sun
+          Object.keys(interpolatedPos).forEach((key) => {
+            sun.style[key] = interpolatedPos[key];
+          });
+        }
+
+        window.addEventListener('scroll', () => {
+          requestAnimationFrame(updateSteps);
+        });
+
+        // Initial update
+        updateSteps();
+      });
+    </script>
+  </body>
+</html>
+

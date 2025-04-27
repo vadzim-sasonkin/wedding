@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 526.48">
+  <!-- Stripes -->
+  <rect width="1000" height="526.48" fill="#fff"/>
+  <g fill="#bf0a30">
+    <rect width="1000" height="40.5" y="0"/>
+    <rect width="1000" height="40.5" y="81"/>
+    <rect width="1000" height="40.5" y="162"/>
+    <rect width="1000" height="40.5" y="243"/>
+    <rect width="1000" height="40.5" y="324"/>
+    <rect width="1000" height="40.5" y="405"/>
+    <rect width="1000" height="40.5" y="486"/>
+  </g>
+  <!-- Blue canton -->
+  <rect width="400" height="282.86" fill="#002868"/>
+  <!-- Stars -->
+  <g fill="#fff">
+    <g id="star">
+      <polygon points="0,-10 2.351,-3.236 9.511,-3.236 3.580,1.236 5.931,8 0,3.528 -5.931,8 -3.580,1.236 -9.511,-3.236 -2.351,-3.236"/>
+    </g>
+    <use href="#star" transform="translate(40,25)"/>
+    <use href="#star" transform="translate(80,25)"/>
+    <use href="#star" transform="translate(120,25)"/>
+    <use href="#star" transform="translate(160,25)"/>
+    <use href="#star" transform="translate(200,25)"/>
+    <use href="#star" transform="translate(240,25)"/>
+    <use href="#star" transform="translate(280,25)"/>
+    <use href="#star" transform="translate(320,25)"/>
+    <use href="#star" transform="translate(360,25)"/>
+    
+    <use href="#star" transform="translate(40,65)"/>
+    <use href="#star" transform="translate(80,65)"/>
+    <use href="#star" transform="translate(120,65)"/>
+    <use href="#star" transform="translate(160,65)"/>
+    <use href="#star" transform="translate(200,65)"/>
+    <use href="#star" transform="translate(240,65)"/>
+    <use href="#star" transform="translate(280,65)"/>
+    <use href="#star" transform="translate(320,65)"/>
+    <use href="#star" transform="translate(360,65)"/>
+    
+    <use href="#star" transform="translate(40,105)"/>
+    <use href="#star" transform="translate(80,105)"/>
+    <use href="#star" transform="translate(120,105)"/>
+    <use href="#star" transform="translate(160,105)"/>
+    <use href="#star" transform="translate(200,105)"/>
+    <use href="#star" transform="translate(240,105)"/>
+    <use href="#star" transform="translate(280,105)"/>
+    <use href="#star" transform="translate(320,105)"/>
+    <use href="#star" transform="translate(360,105)"/>
+    
+    <use href="#star" transform="translate(40,145)"/>
+    <use href="#star" transform="translate(80,145)"/>
+    <use href="#star" transform="translate(120,145)"/>
+    <use href="#star" transform="translate(160,145)"/>
+    <use href="#star" transform="translate(200,145)"/>
+    <use href="#star" transform="translate(240,145)"/>
+    <use href="#star" transform="translate(280,145)"/>
+    <use href="#star" transform="translate(320,145)"/>
+    <use href="#star" transform="translate(360,145)"/>
+    
+    <use href="#star" transform="translate(40,185)"/>
+    <use href="#star" transform="translate(80,185)"/>
+    <use href="#star" transform="translate(120,185)"/>
+    <use href="#star" transform="translate(160,185)"/>
+    <use href="#star" transform="translate(200,185)"/>
+    <use href="#star" transform="translate(240,185)"/>
+    <use href="#star" transform="translate(280,185)"/>
+    <use href="#star" transform="translate(320,185)"/>
+    <use href="#star" transform="translate(360,185)"/>
+    
+    <use href="#star" transform="translate(40,225)"/>
+    <use href="#star" transform="translate(80,225)"/>
+    <use href="#star" transform="translate(120,225)"/>
+    <use href="#star" transform="translate(160,225)"/>
+    <use href="#star" transform="translate(200,225)"/>
+    <use href="#star" transform="translate(240,225)"/>
+    <use href="#star" transform="translate(280,225)"/>
+    <use href="#star" transform="translate(320,225)"/>
+    <use href="#star" transform="translate(360,225)"/>
+  </g>
+</svg> 

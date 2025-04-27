@@ -1,0 +1,147 @@
+.title-big {
+  font-size: 10rem;
+
+  @media (max-width: 768px) {
+    font-size: 4rem;
+  }
+}
+
+.title {
+  font-size: 5vh;
+}
+
+  .small-text {
+    font-size: clamp(1rem, 1.5vw, 10rem);
+  }
+  .agenda {
+    font-size: 3vh;
+    }
+
+.smaller-text {
+    font-size: 2rem;
+}
+
+body {
+  font-family: 'Tektur', sans-serif;
+  font-weight: 500;
+  color: #7e4141;
+}
+
+.lang-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+}
+
+.lang-btn {
+  width: 30px;
+  height: 20px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.lang-btn:hover {
+  opacity: 1;
+}
+
+.lang-btn.active {
+  opacity: 1;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.lang-btn.en {
+  background-image: url('images/us-flag.svg');
+}
+
+.lang-btn.be {
+  background-image: url('images/by-flag.svg');
+}
+
+@media (max-width: 768px) {
+  .lang-switcher {
+    top: 10px;
+    right: 10px;
+    padding: 6px;
+  }
+
+  .lang-btn {
+    width: 24px;
+    height: 16px;
+  }
+}
+
+.github-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.github-link:hover {
+  opacity: 1;
+}
+
+.github-link svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.github-stars {
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.github-stars svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 768px) {
+  .github-link {
+    bottom: 10px;
+    right: 10px;
+    padding: 6px 10px;
+  }
+  
+  .github-link svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .github-stars {
+    font-size: 12px;
+  }
+
+  .github-stars svg {
+    width: 14px;
+    height: 14px;
+  }
+}
