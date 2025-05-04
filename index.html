@@ -25,13 +25,24 @@
       <button class="lang-btn en" data-lang="en" aria-label="English"></button>
     </div>
 
-    <a href="https://github.com/vadzimk/wedding" class="github-link" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub">
+    <a
+      href="https://github.com/vadzimk/wedding"
+      class="github-link"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="View source on GitHub"
+    >
       <svg viewBox="0 0 16 16" class="github-icon">
-        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        <path
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+        />
       </svg>
       <div class="github-stars">
         <svg viewBox="0 0 16 16">
-          <path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z" fill-rule="evenodd"/>
+          <path
+            d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"
+            fill-rule="evenodd"
+          />
         </svg>
         2025
       </div>
@@ -61,33 +72,14 @@
       <div class="step2--content step--content">
         <div class="textbox-container">
           <div class="textbox location">
-            <div class="caption smaller-text" data-translate="location">
-              Warsaw
-            </div>
+            <div class="caption smaller-text" data-translate="when">when</div>
             <div class="value">19.07.2025</div>
           </div>
           <div class="textbox counter">
-            <div class="caption smaller-text" data-translate="daysLeft">
-              засталося
+            <div class="caption smaller-text" data-translate="startTime">
+              start time
             </div>
-            <div class="value" id="days-counter">
-              <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                  const weddingDate = new Date('2025-07-19');
-                  const today = new Date();
-
-                  // Calculate the difference in milliseconds
-                  const diffTime = weddingDate - today;
-
-                  // Convert to days and round down
-                  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-                  // Display the result
-                  document.getElementById('days-counter').textContent =
-                    diffDays + ' дзён';
-                });
-              </script>
-            </div>
+            <div class="value" id="start-time">12:00</div>
           </div>
         </div>
       </div>
@@ -108,24 +100,41 @@
         </div>
 
         <div class="textbox-container agenda">
-          <p data-translate="food">Ежа і напоі</p>
-          <p data-translate="rest">Адпачынак</p>
+          <p data-translate="food">ежа і напоі</p>
+          <p data-translate="rest">адпачынак</p>
           <p data-translate="activities">
-            Розныя актыўнасці ў тым ліку спартыўныя (але на ваш густ, захочаце -
+            розныя актыўнасці ў тым ліку спартыўныя (але на ваш густ, захочаце -
             можаце ўвесь час прабавіць у басейне)
           </p>
-          <p data-translate="people">Людзі, размовы</p>
-          <p data-translate="ceremony">Цырымонія</p>
-          <p data-translate="dance">Танцы</p>
+          <p data-translate="people">людзі, размовы</p>
+          <p data-translate="ceremony">цырымонія</p>
+          <p data-translate="dance">танцы да світанку</p>
+          <p data-translate="transfer">+ трансфер з варшавы і назад</p>
         </div>
       </div>
 
       <div class="step4"></div>
 
       <div class="step4--content step--content">
-        <div class="title" data-translate="form">Апытанка</div>
-        <div class="form-container">
-          <div data-tf-live="01JSVZ9VBTRAT47S4S2F1CBBNM"></div>
+        <div class="step4--container">
+          <div class="title" data-translate="dressTitle">што апранаць?</div>
+          <div class="smaller-text" data-translate="dressDetails"></div>
+        </div>
+        <div class="step4--container">
+          <div class="title" data-translate="surveyIntro">Апытанка</div>
+
+          <div class="link-box-container">
+            <a
+              class="link-box"
+              href="https://darisobol.typeform.com/to/IFqXWELW"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="link-box-text" data-translate="surveyLink"
+                >апытанца</span
+              >
+              &#8599;</a
+            >
+          </div>
         </div>
       </div>
 
@@ -134,15 +143,73 @@
       </div>
 
       <div class="step5--content step--content">
-        <div class="title" data-translate="playlist">Playlist</div>
+        <div class="title" data-translate="location">where will it be</div>
         <div class="playlist-container">
-          <a
-            class="playlist-link"
-            href="https://music.youtube.com/playlist?list=PLkOWUKyvEGvu-hAl3qLFAYtW7oehu4pkd"
-            target="_blank"
-          >
-          </a>
-          <img src="./images/playlist.png" alt="playlist" />
+          <div class="map-container">
+            <iframe
+              width="100%"
+              height="400"
+              style="
+                border: 0;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              "
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=villa+omnia+warsaw&zoom=14"
+            >
+            </iframe>
+            <!-- <div class="map-overlay">
+              <div class="map-title">Villa Omnia, Warsaw</div>
+              <a 
+                href="https://goo.gl/maps/YourSpecificLinkHere" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="directions-link"
+              >
+                Get Directions
+              </a>
+            </div> -->
+          </div>
+          <style>
+            .map-container {
+              position: relative;
+              width: 100%;
+              /* max-width: 900px; */
+              overflow: hidden;
+              border-radius: 8px;
+            }
+            .map-overlay {
+              position: absolute;
+              bottom: 20px;
+              left: 20px;
+              background: rgba(255, 255, 255, 0.9);
+              padding: 10px 15px;
+              border-radius: 4px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+            .map-title {
+              font-weight: bold;
+              margin-bottom: 5px;
+            }
+            .directions-link {
+              color: #4285f4;
+              text-decoration: none;
+              font-size: 0.9em;
+            }
+            .directions-link:hover {
+              text-decoration: underline;
+            }
+            .review-box {
+              visibility: hidden;
+            }
+            @media (max-width: 768px) {
+              .map-container iframe {
+                height: 300px;
+              }
+            }
+          </style>
         </div>
       </div>
 
@@ -159,12 +226,16 @@
           </div>
         </div>
         <div class="image-container">
-          <div class="textbox name-vadzim">Vadzim</div>
-          <div class="textbox name-dasha">Dasha</div>
+          <!-- <div class="textbox name-vadzim">Vadzim</div> -->
+          <!-- <div class="textbox name-dasha">Dasha</div> -->
           <img src="./images/couple-outro.png" alt="couple" />
         </div>
       </div>
     </div>
+
+    <!-- <div class="arrow bounce">
+      <a class="fa fa-arrow-down fa-2x" href="#">Arrow</a>
+    </div> -->
 
     <script>
       // Language switcher functionality
@@ -428,3 +499,21 @@
   </body>
 </html>
 
+<!-- <div class="value" id="days-counter">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const weddingDate = new Date('2025-07-19');
+      const today = new Date();
+
+      // Calculate the difference in milliseconds
+      const diffTime = weddingDate - today;
+
+      // Convert to days and round down
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+      // Display the result
+      document.getElementById('days-counter').textContent =
+        diffDays + ' дзён';
+    });
+  </script>
+</div> -->

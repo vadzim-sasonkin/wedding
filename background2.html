@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wedding Vibe Improved</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .background {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ffe055;
+        overflow: hidden;
+      }
+      .yellow-circle {
+        position: absolute;
+        width: 40vh;
+        height: 40vh;
+        background: yellow;
+        border-radius: 50%;
+        top: 0vw;
+        left: -100px;
+        z-index: 100;
+      }
+      .sky {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #92daff; /* sky blue */
+        clip-path: polygon(0% 40%, 66.6% 100%, 0% 100%);
+        bottom: 0;
+        z-index: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="yellow-circle"></div>
+      <div class="sky"></div>
+    </div>
+  </body>
+</html>
